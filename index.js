@@ -17,5 +17,5 @@ const dogs=pets.filter(pet=>pet.type==="dog");
 dogs.map(item=>console.log(item));
 
 const jasper=pets.find(pet=>pet.name==="jasper");
-console.log("Jasper is " + jasper.petwithedge + " years old");
+console.log(`JASPER IS ${jasper.petwithedge} year old `);
 
