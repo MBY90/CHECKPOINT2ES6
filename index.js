@@ -9,13 +9,13 @@ getAge=(pet)=>
   return new Date().getFullYear() - pet.bornOn; 
 }
 
-pets.forEach(pet => petwithedge = getAge(pet));
+pets.forEach(pet => pet.petwithedge = getAge(pet));
 
-pet.map(pet=>console.log(pet.petwithedge));
+pets.map(pet=>console.log(pet));
 
 const dogs=pets.filter(pet=>pet.type==="dog");
 dogs.map(item=>console.log(item));
 
-const jasper=pets.find(pet=>pet.name==="jasper");
-console.log(`JASPER IS ${jasper.petwithedge} year old `);
+const jasper = pets.find(pet=>pet.name==="Jasper");
 
+console.log(`Jasper is ${jasper.petwithedge} years old`);
